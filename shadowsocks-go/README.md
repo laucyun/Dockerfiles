@@ -13,14 +13,14 @@ Quick Start
 
 Build an image from a Dockerfile:
     
-    docker build -t ss .
+    docker build -t shadowsocks-go .
 
 
 This image uses ENTRYPOINT to run the containers as an executable:
 
-    docker run -d --name=ss -p 8388:8388 laucyun/ss -p 8388 -k SS_SERVER_PASSWORD -m aes-256-cfb -t 600
+    docker run -d --name=ss -p 8388:8388 laucyun/shadowsocks-go -p 8388 -k SS_SERVER_PASSWORD -m aes-256-cfb -t 600
     or
-    docker run -d --name=ss -p 8388:8388 laucyun/ss -c /opt/shadowsocks/ss-config.json 
+    docker run -d --name=ss -p 8388:8388 laucyun/shadowsocks-go -c /opt/shadowsocks/ss-config.json 
 
 
 Run a commandline in a running container:
