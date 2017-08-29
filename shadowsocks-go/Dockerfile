@@ -11,6 +11,6 @@ ADD https://github.com/shadowsocks/shadowsocks-go/releases/download/$SS_VERSION/
 RUN tar -xzvf /opt/shadowsocks/shadowsocks-server.tar.gz -O > /opt/shadowsocks/ss-server
 RUN chmod u+x /opt/shadowsocks/ss-server
 
-ADD ss.json /opt/shadowsocks/ss.json
+ADD ss-config.json /opt/shadowsocks/ss-config.json
 
 ENTRYPOINT ["/opt/shadowsocks/ss-server"]
