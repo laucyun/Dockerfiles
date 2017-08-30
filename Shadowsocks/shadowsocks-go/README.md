@@ -12,14 +12,14 @@ The image is based on  [Busybox](https://hub.docker.com/_/busybox/) which is ext
 
 Build an image from a Dockerfile:
 
-    $ docker build -t shadowsocks-go .
+    $ docker build -t laucyun/shadowsocks-go .
 
 
 This image uses ENTRYPOINT to run the containers as an executable:
 
-    $ docker run -d --name=ss -p 8388:8388 laucyun/shadowsocks-go -p 8388 -k SS_SERVER_PASSWORD -m aes-256-cfb -t 600
+    $ docker run -d --name=ss -p 8388:8388 laucyun/shadowsocks-go:1.2.1 -p 8388 -k SS_SERVER_PASSWORD -m aes-256-cfb -t 600
     # or
-    $ docker run -d --name=ss -p 8388:8388 laucyun/shadowsocks-go -c /opt/shadowsocks/ss-config.json 
+    $ docker run -d --name=ss -p 8388:8388 laucyun/shadowsocks-go:1.2.1 -c /opt/shadowsocks/ss-config.json 
     
 If you start through the configuration file, you need to modify the configuration file: 
 
