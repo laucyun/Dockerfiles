@@ -8,8 +8,7 @@ A Dockerfile for building image of [shadowsocks-go](https://github.com/shadowsoc
 The image is based on  [Busybox](https://hub.docker.com/_/busybox/) which is extreamly tiny, and using binary files, so the whole image only takes **9.71MB**. 
 
 
-Quick Start
------------
+# Quick Start
 
 Build an image from a Dockerfile:
 
